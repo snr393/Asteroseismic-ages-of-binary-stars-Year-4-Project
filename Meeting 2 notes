@@ -1,0 +1,28 @@
+Notes
+
+Regularly commit to github
+Decide what scope of the project to focus on (grid, neural network, etc.)
+MESA doesn’t run on Windows - needs Bluebear. Course in November
+Need python and ultranest
+Virtual environment - different versions of pip installed software won’t effect the rest of the computer
+Gaia measures apparent mag in 3 bands and distance to find luminosity
+Surface term corrections for 1D models - best known failure of 1D models is surface treatment. Mode frequencies are offset
+Radial mode passes through the centre of the star, l=2 modes don’t so there is a minimum depth they probe - lower turning point
+Lower frequency modes have longer length scale and probe deeper into the surface - higher turning point
+Low frequency model modes are closer to observations as higher turning point is deeper into star, doesn’t probe surface
+Surface correction - Owens treats surface term with Gaussian process
+Infinite set of smooth trial functions weighted by GP kernel and agreement with data
+Sound like a scientist
+Ultranest: Metropolis Hastings is the simplest MCMC. Ultranest is fast, there is also Dynasty
+
+
+Actions
+
+Research virtual environments
+Download Pitchfork and get Owen’s code running - get posterior distributions for one star, then more stars, take away observables and see what happens, upload to github, get absolute difference between ours and Owens
+Read more papers, Luke and Leia, Krazy and Ignatz etc.
+Look into finding L, Z, T_eff, dynamical masses, interferometric radii
+Higher and lower turning points
+Gaussian processes
+Ultranest
+Commit meeting notes to github
