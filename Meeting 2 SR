@@ -2,7 +2,7 @@ Discussed:
 
 - Went through context, aims, methods, results and conclusion
 - Owen's code runs on windows but BlueBear and MESA needs Linux
-- Created a rough plan for the project, work through Owens code first and then assess fro there whether to attempt coding
+- Created a rough plan for the project, work through Owens code first and then assess from there whether to attempt coding
 our own version or test out different grids ect.
 - Need python and UltraNest for now, use pip install to get UltraNest
 - Virtual enviroments good for separating software versions needed for runnning specific code on computer, keep separate 
