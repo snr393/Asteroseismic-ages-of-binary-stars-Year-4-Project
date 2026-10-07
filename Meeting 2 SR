@@ -1,0 +1,29 @@
+Discussed:
+
+- Went through context, aims, methods, results and conclusion
+- Owen's code runs on windows but BlueBear and MESA needs Linux
+- Created a rough plan for the project, work through Owens code first and then assess fro there whether to attempt coding
+our own version or test out different grids ect.
+- Need python and UltraNest for now, use pip install to get UltraNest
+- Virtual enviroments good for separating software versions needed for runnning specific code on computer, keep separate 
+from GitHub
+- 1D stellar models are flawed, asterseismology exposes their limitations, one being surface correction, high frequencies
+calculated for the surface of stars are offset by the model compared to true frequencies so need to be corrected
+- Gaussian process try an infinite set of smooth functions which are weighted by priors and how well it fits with the data,
+used to get rid of the surface correction
+- UltraNest is a nested sampling method so it calls 10s of thousands of points in a vectorised way and calculates evidence,
+dynesty may be slightly easier to work with
+
+
+
+Need to do for next week:
+- Get Owen's code running, present a posterior distibution of a star at next meeting (post onto GitHub), compare with Owens
+results
+- Read more papers
+- Reasearch how to create a virtual environment
+- Look into how we measure luminosity, surface metallicity through spectroscopy, estimate masses dynamically and radius 
+through interferometry and why effective temperature is tricky to measure
+- Learn more about lower and upper turning points
+- Learn about Gaussian processes
+- Add meeting notes to GitHub
+- If need more work, look into removing observables in owen's code and see what it does to the results
