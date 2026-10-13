@@ -1,0 +1,23 @@
+Notes:
+- Went through context, aims, methods, results and conclusion, will get better as prjoect goes on
+- Posterior distribution of sun looks like Owens plot
+- Mixing length makes a lot of approximations, stellar models molded to work with the sun and a few clusters, uses mixing
+length theory which allows us to make it a single parameter in models
+- To get age from the individual posterior distribution, you multiply the results together to get the probable age, but
+later on will need to also take care of chemical composition of the stars
+- Radius found through interemetry, finding the angular diameter of the telescope
+- Effective temperature found using spectral broadening 
+- Settling of elements - change chemical composition of binaries throughout evolution
+- Could use google colabs for faster running times
+- Further projects options to explore, make own simulated data sets to test, test different grids or neural networks, modify
+pitchfork to evaluate two stars together or take the posteriors and apply a hierarchical model ect
+
+What to do for next week:
+- Finish tasks from last week, go over key parameters and how they are measured
+- Look into 16Cyga/b, read more papers about it, try and plot both posteriors distributions on top of each other
+- Remove observables like mode frequecies ior multiply by 10^6 to see how fast is runs as a star without asterseismic behaviour
+- Look into ssh, putty/VScode
+- Write a blog about work done this week in 30 mins, make it public so it will be presentable and help with accountability
+- Guy create a BlueBear crashcourse, need to create a script
+- Look into nested sampling
+- Go over the marginalisation related to the corner plots
