@@ -1,0 +1,21 @@
+Notes:
+Measuring effective temp: spectral broadening. Certain wavelengths absorbed in photosphere - width determined by pressure, temp, turbulence, mag fields, rotation
+Composition of stars change - heavier elements settle
+For ages of 16 Cyg A and B multiply posteriors, account for chemical composition
+Or modify pitchfork to have same age and initial comp
+Mixing length - stellar evolution models molded to work with Sun and a few clusters
+In convective regions of the star, mixing happens on a characteristic mixing length scale - becomes one parameter in a model. Alternatives are slow
+Can replace outer layer of star with smaller 3D models 
+Google Colab is alternative to BlueBear - GPU instance available
+Adapt pitchfork to run both stars or take posteriors and do something
+
+Actions:
+Gaussian Processes
+Nested samplers
+16 Cyg A and B, layer plots
+Read papers, lots on 16 Cyg
+Write a short blog about the week’s work on the project - make public on github. Max half an hour
+Guy to prep a BlueBear crash course
+SSH into BlueBear - putty, VSCode - set up script to run latest code
+Run the Sun with no asteroseismic observables
+Test simulated data sets potentially
