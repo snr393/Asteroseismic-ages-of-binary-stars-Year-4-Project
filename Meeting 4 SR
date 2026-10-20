@@ -1,0 +1,16 @@
+Notes:
+- Going through Doug's 16CygB plot with removed observable
+- Leaving out asteroseismic commponent of stars makes age more uncertain, harder to calculate
+- Our project is defferent to the "16CygB inversion techniques" technically counts as an inversion technique but not as defined by 
+the author
+- Went through trying to ceate SSH with PuTTY
+- Talked about nested sampling, good for parameter estimation and gives out evidence, time to run proportional to volume of 
+prior/posterior, reliable but slow, poor in high dimensional space
+
+To do:
+- Read more papers on 16Cyg
+- Continue trying the bluebear starter doc after activating account, finish calculating pi
+- Gaussian processes - try to explain it
+- Think about running pitchfork on bluebear after pi test run goes well
+- Read into how we could do the inference
+- Try and write a blog
