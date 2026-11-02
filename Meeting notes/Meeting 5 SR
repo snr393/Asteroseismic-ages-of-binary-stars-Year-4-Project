@@ -1,0 +1,11 @@
+Discussed:
+- Sent a request to it services
+- Went through Gaussian processes (GP)- fit infinite number of functions weighted by prior, relies on covariant points, uses a multivariant normal distribution, need to invert and take determinant of covariant matrix, key parts mean function and covariance matrix from the kernel
+correlation interesting - knowledge of one improves knowledge of the other points, GP useless if data not correlated
+- Had a meeting with IT and got the SSH connection working
+Need to do:
+- Get pi estimation running, then try running pitchfork code on 16Cyga and b
+- Run more stars on pitchfork - Alpha cen binary
+- Organise GitHub/ make folders for research notes, code progressions etc.
+- Read more papers
+- Look into how to do the inference/ how to get the age from the probability distributions(statistically need to multiply)
