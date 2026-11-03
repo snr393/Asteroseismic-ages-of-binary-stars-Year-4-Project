@@ -1,0 +1,15 @@
+By G. Buldgen1, S. J. A. J. Salmon1, D. R. Reese2 and M. A. Dupret1
+
+Uses forward modelling - pick model parameters, create stellar model, predict frequencies and then compare with observed
+Advance with inversions - work back from observed frequecies to infer stellar interior properties
+16CygB - high quality Kepler oscillation freqs, Spectroscopic measurements, Interferometric observations, compare with 16CygA - 
+similar mass but other difference show internal mixing processes, has Jovian planet
+16CygA - has a red dwarf in its orbit
+Previously found seismic inversion of 16CygA constrained microscopic diffusion
+Microscopic diffusion - causes He and heavy elements to sink so surface abundances change, affects age and oscillation 
+frequencies
+Inversion quantity t_u - sensitive to internal gradients of chemical composition, diffusion and extra mixing processes
+Method - built reference stellar models, fitted observational constraints, found theoretical oscillation freqs
+Results - adopting same chemical composition and microscopic diffusion of 16CygA did not reproduce the inverted t_u for 16CygB, 
+frequencies said something about internal structure that the standard models missed
+
