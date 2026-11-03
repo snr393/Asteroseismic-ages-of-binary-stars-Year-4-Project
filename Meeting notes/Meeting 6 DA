@@ -1,0 +1,28 @@
+Notes
+
+Binary system A and B - for each star run pitchfork separately to get posteriors P_A and P_B samples
+Call function f(theta) = P(D|theta) (likelihood)
+Cant use prior twice - undo prior and redo with new prior
+Uniform priors are trivial to remove
+Turn posterior samples from stars into a continuous function - interesting step (single multivariate normal, potentially a mixture of multiple multivariate normals, normalising flow neural network - normalising flow is publishable)
+Try all methods and see which is better
+With likelihoods for A and B with functions, we want a model M(theta|D_A, D_B)
+Mixture of multivariate normals: 2 distributions, P1(x) and P2(x) that are normalised
+New distribution that is a mixture Pmu(x) = (1-q)P1(x) + qP2(x)
+4 parameters: age, Zi, Yi, mixing length - could keep mass, surface term corrections are boring
+Sci-kit learn, STAN (probabilistic programming language)
+
+D = PA(DA|thetaA), PB(DB|thetaB)
+Model M = PA(DA|thetaA) * PB(DB|thetaB) = P(D|theta,M)
+P(theta) = P(age) * P(Zi) * …
+Prior on age, mixing length is uniform, data on metallicity is so constrained it might as well be uniform
+Prior on helium - helium comes from BBN, SNe, AGB branch with different timescales dependent on mass.
+Type 2s generate helium first, then Type 1s, then AGB - can see in chemical history of the galaxy which depends on star formation history
+P(theta|D,M) = P(theta)* P(D|theta,M) / Z
+
+Actions
+
+Read papers
+Decide how to split up the work, nested sampler to make inference work (Dynasty, prior must be dealt with carefully, forced to draw from unit hypercube, np.random.norm.pdf())
+Get pitchfork running on bluebear - other stars e.g. alpha cen, Luke and Leia (George for new freqs), Crazy and Ignatz, (later find other asteroseismic binaries, red giant binaries using BASTA)
+Dynasty using prior transform
