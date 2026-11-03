@@ -1,0 +1,67 @@
+Virtual environments:
+Create work environments that are isolated from the rest of your computer. Allows independent usage of software and applications. Prevents conflicts for different projects needing different versions of a packages. Keeps the project safe from updates done on the whole computer. Only packages downloaded into the environment are available, none from the 'python base'.
+How to set one up:
+- Use venv, 
+- Creates a Scripts on windows, a subdirectory with a copy of the python executable
+- Also a Lib\site-packages is created, another directory
+- Install packages using pip/ conda install directly into environment
+- Contain in directory, not movable/copyable, can recreate same environment again
+- No project code in the environment
+
+
+UltraNest:
+Bayesian inference and nested sampling (Monte Carlo technique) package, very robust. 
+Install using pip or conda
+Nested Sampling - iterates through random live points to find the live point with the lowest likelihood, eliminates it
+and replace with a point of higher likelihood. Repeated until the live points concentrate near the best fitting regions.
+Each cycle makes a new region of parameter space within the old so the shells are nested inside the previous region. 
+Evidence is the average likelihood over the whole prior volume, which shrinks as nested sampling works through the 
+iterations.
+Bayesian stats - P(θ∣D)=P(D∣θ)P(θ)​/P(D)
+
+P(θ∣D) = posterior
+P(D∣θ) = likelihood
+P(θ) = prior
+P(D) = evidence
+
+SSH:
+Enables connection of two computers over a network, allows control of remote Linux machine through own terminal.
+PuTTy - program for windows that uses SSH, use it to create an SSH connection. Enter in Hostname, Username and port.
+VS Code - use SSH in more powerful way, connects to remote machine using SSH, stores files on remote machine and editor
+is locally on own PC. Don't have to keep copying files back and forth. 
+How to set up VS Code - download and install, install remote SSH extension from Microsoft, check SSH works first, open
+SSH config file (Ctrl + Shift + P) then type "Remote-SSH: Open SSH Configuration File", choose 
+e.g "C:\Users\YourName\.ssh\config", add server with nickname and username, then press (Ctrl + Shift + P) and 
+run "Remote-SSH: Connect to Host", click on nickname, will see SSH: nickname in corner, open project folder, 
+open remote terminal, set up python environment and select python interpreter
+
+Luminosity:
+We can measure apparent brightness and apply bolometric corrections to get total flux reaching Earth, and can determine distance and
+then use the luminosity equation L=4π(d^2)Fbol​.
+
+Surface Metallicity:
+Metallicity measures abundance of heavy elements over hydrogen strongly affects opacity, luminosity, temperature and 
+evolutionary timescale. Measured using spectroscopy and identifying the iron absorption lines and compare to stellar models.
+
+Effective Temperature:
+Depicts how atoms are ionised, which energy states they occupy. Measured by interferometry, obtaining an angular diameter
+and total flux received on Earth then Teff​=(4Fbol​​/σθ^2)^(1/4), Fbol = bolometric flux and θ = angular diameter. Could
+also use spectroscopy.
+
+Upper and Lower turning points:
+Where wave is no longer propagating, it is being reflected.
+Upper turning point close to surface.
+Wave propagation - for p-mode, propagates is mode freq > Lamb freq and acoustic cutoff freq, reflects is one not met
+Upper - when mode freq = acoustic freq, high freq have turning points near photosphere
+Lower - when mode freq = Lamb freq, as mode deg l increases, refraction happens earlier before reaching core
+
+Marginalisation related to the corner plots:
+Integrating over unwanted parameters to get posterior distribution with only wanted parameters.
+Can look at a two parameters probability distribution after all remaining parameters have been marginalised so measurement
+includes uncertainty from all parameters in 2D marginalised posteriors.
+
+Gaussian processes:
+It is a collection of functions that have gaussian distributions 
+Defined using a mean and covariance(kernel) function 
+Kernels - measure the likeness between the input points
+Prior distribution the starting place for GP defined using mean and covariance function
