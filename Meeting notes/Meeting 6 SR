@@ -1,0 +1,19 @@
+Discussed:
+- Bayesian Inference, run Pitchfork separately for each star, get posterior samples and recover likelihoods from them, remove original 
+prior to reconstruct likelihood (easy if initial prior is uniform), 3 ways to approximate the pdf - single multivariate normal/mixture
+of multivariate normals/Normalising flow(neural-network based),
+- Inference code will give out a common age and inttial composition 
+- Want to work in 4/5 dimensions - age, mixing length, initial z, initial He, potentially mass too
+- He abundance comes from big bang nucleosynthesis (primordial He), Type 2 supernovae produce He first then Type 1 supernovae produce 
+heavier elements, AGB eject He/C/N rich envelopes - all strongly dependent on mass
+- Scikit-learn has simple code which could be used as an initial test
+- Stan probalistic programming language for bayesian statistics
+- Covariance matrix has to be positive definite for multivariate normal distributions so can be described by Cholesky decomposition
+- would be great to run a multivaraite normal on 16Cyg for the prelim
+
+For next week:
+- Try a toy model in Dynesty but make our own prior transform
+- Pitchfork running of bluebear
+- Discuss work distribution, i.e one tackles the different ways of producing the likelihoods and the other works on the inference pipeline
+- Read more papers
+- At some point get help from George for frequencies for Luke and Leia and Ignatz
