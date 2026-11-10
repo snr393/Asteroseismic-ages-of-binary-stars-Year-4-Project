@@ -1,0 +1,16 @@
+By Owen Scutt
+
+- Using Asteroseismology to get mass, radius, age, internal structure from oscillation frequencies
+- Using more dimensions increase code runnings costs when modelling
+- Created Pitchfork - makes grid of stellar models of solar-like oscillators
+- Grid modelling better but need to focus on uncertainties
+- Surface of star needs to be accounted for to reduce the difference in observed and modelled oscillation frequencies
+- Neural networks more efficient than interpolation methods and allows for higher dimensions including varied mixing and 
+rotation
+- Goal to emulate oscillation frequencies of solar-like stars with machine learning and then use Bayesian inference
+- Methods - create a stellar model grid which is the training data, develop Pitchfork by teaching it how stellar parameters 
+lead to observable quantities, work through the Bayesian inference that the emulator is embedded in, treat surface effect 
+within model so its uncertainty is accounted for, test using hare and hounds where unseen data from training phase goes in to
+recover hounds
+- Results - Pitchfork is a high precision emulator, recovered stellar properties of test data with low bias, well calculated
+ uncertainties, reliable posterior distributions, scalable for future work
