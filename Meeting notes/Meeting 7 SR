@@ -1,0 +1,17 @@
+Discussed:
+- Pitchfork creates posteriors from staller evolution properties
+- Using a unifrom prior on pitchfork means there is no need to reverse the prior - not the case
+if non-unifrom
+- Want to turn the sample cloud from Pitchfork into a continuous function - smooth PDF, use that as a 
+prior/likelihood in Dynesty and then enforce a the binary system is coeval and then hopefully infere 
+age and chemical composition
+- If one mmultivariate not good enough, try mixture of multivariate gaussians - more flexible than one,
+if still not accurate enough, use normalising flow which learns a transformation, even more flexible
+than other two methods
+
+To do:
+- Write out a test abstract
+- Bullet point the prelim with results from the multivaraite normal results/plots - decide if 
+it is good enough or need to try multiple ones
+- Email/speak with George to get frequencies for more stars
+- Read more papers, each take two papers
