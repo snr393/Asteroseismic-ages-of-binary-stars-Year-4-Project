@@ -1,0 +1,38 @@
+Abstract
+Use masked autoregressive flows (MAFs) and kernel density estimators (KDEs) to learn marginal (nuisance-free) posterior densities of science parameters
+Applications across astrophysics
+
+1 Introduction
+Bayesian analysis uses Bayes theorem to update probability of a given model (posterior), using existing knowledge (prior) and probability distribution of the data (likelihood)
+Nuisance parameters characterise foreground/instrumental effects, leading to high dimensional parameter spaces when only a few are of interest
+Margarine calculates nuisance-marginalised posteriors through MAFs and KDEs
+Density estimators model a probability distribution from a set of samples
+Kullback-Leibler divergence determines how much information has been gained when moving from prior to posterior - marginal KL divergence is gain in information of core science parameters - measure of contraction between the two distributions
+Bayesian model dimensionality (BMD) is number of parameters constrained during inference - marginal BMD used to compare number of core science parameters
+
+2 Theory
+Nested sampling algorithm aims to estimate evidence Z: use prior to generate samples of parameters Θ, calculate likelihood, then approximate the integral over Θ
+Evidence can be used to compare models - higher evidence suggests preference for a particular model
+Marginal posteriors for core science parameters found by integrating posterior over nuisance parameters
+Difficult to calculate the high dimensional integral over nuisance parameters - use density estimators to generate samples from marginalised posterior distribution
+Nuisance-free likelihood = marginal posterior * Z / marginal prior
+Marginal posterior and prior found from samples using a DE
+Marginal KL divergence corresponds to astrophysical parameters - approximately equal to log(prior volume/posterior volume) - posterior must be normalised
+BMD gives measure of effective number of parameters being constrained - can quantify tensions between different experimental results
+
+3 Density estimators in practice
+Normalising flows transform a simple normal distribution into a complex one
+Autoregressive means each parameter is only conditional on the previous ones
+In a masked autoregressive flow, some connections between the input and output are masked out to respect the dependence of the variables
+Kernel density estimation: place a small (Gaussian) kernel at every sample data point, then add individual distributions to produce an estimate of overall probability density
+
+4 Applications of Margarine
+Train density estimators on posteriors from individual fits for core science parameters from two different experiments to generate nuisance free likelihood functions
+Then log(L_AB) = log(L_A) + log(L_B)
+Emulators are a computationally cheap approximation of complex models - can be used to make priors
+
+5 Conclusions
+Evaluation of marginal KL divergences and BMDs let you compare different experiments targeting the same signals with different nuisance parameters
+MAFs perform better than KDEs - more accurate and scale better with sample size and dimension
+Nuisance-free likelihood lets you efficiently combine constraints of different data sets
+Margarine can create priors using experimental data/simulations
