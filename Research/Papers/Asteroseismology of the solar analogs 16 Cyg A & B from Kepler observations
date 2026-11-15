@@ -1,0 +1,23 @@
+Abstract
+Asteroseismology can provide constraints on the stellar properties of solar analogs 16 Cyg A and B
+Properties of each star derived independently using AMP, giving a common age (6.8±0.4 Gyr) and initial composition
+
+1 Introduction
+Solar analogs are comparable to recent past and near future of the Sun
+Long orbital period means no dynamical constraints on masses
+2 stars modelled independently using first 3 months of Kepler data
+
+2 Data analysis
+High quality oscillation spectra show octuple (l=3) modes
+Estimates of observed mode frequencies from peak-bagging techniques (maximum-likelihood estimation and MCMC)
+Comparison between results different methods led to a list of robust modes
+
+3 Asteroseismic modelling
+Inputs for stellar modelling are 46/41 frequencies for 16 Cyg A/B, and spectroscopic properties (effective temp, log of surface gravity, metallicity)
+Effective temps used to get bolometric corrections + extinction estimates, then derive luminosity constraints
+Optimal models from AMP are a good match to observational data
+Comparing different models of stellar evolution gives estimates of systematic uncertainty
+
+4 Results and discussion
+Adopted stellar properties after accounting for model dependence show that the stars share a common age and initial composition as expected for a binary system - asteroseismic inference shown to be reliable
+More data may reveal rotational splitting of non-radial modes, or deviations in the small frequency spacings
