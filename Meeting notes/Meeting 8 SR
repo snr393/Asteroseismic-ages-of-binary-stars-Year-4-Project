@@ -1,0 +1,12 @@
+Discussed:
+- Feedback for rough prelim draft, for aims, ages are not actually that interesting, 1D stellar models have limitations when evaluated against binary systems
+- Need a method for transforming Z to Fe/H which is hard to do as we do not know solar composition, 
+- Sci-kit learn has a function for gaussian mixture models and use trial and error to figure out how many MVNs to use, compare dnesity of points to gmm density, too many takes a long time and risks overfitting
+- Exploring different fits over many scenarios and linking back to 1d model conslusions would get marks
+
+What to do for next week:
+- Run single MVN on 16Cyg B, can then do the inference for it using the nested sampler and enforce age an dinitial chemical composition, keep mass different
+- Work through function on Sci-kit learn, look at nested samplers
+- Fix range for metallicity in the unifrom priors and rerun 16CygA
+- Rewrite abstract so it flows better 
+- Email George
