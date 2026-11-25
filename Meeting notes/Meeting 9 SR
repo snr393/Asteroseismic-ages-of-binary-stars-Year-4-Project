@@ -1,0 +1,12 @@
+Discussed:
+- How to do the inference, create a new log likelihood from the individual GMM functions (make them into a class, to store
+weights, means, covariance/inv cov matrices and determinants - save by pickling) and create a PTF and correct the scaling for
+each parameter, enforce shared age and composition but keep masses independent
+- Length of weights and means should be the same otherwise will cause errors for the covariance
+- Make the GMMs global so they are available throughtout the code
+
+What to do for next week:
+- Fix age priors for 16CygA, maybe confer with Doug
+- Look into how to fix truncated distributions
+- Look at n_initial parameter in the gmm and change it from 1 and see it the samples improve
+- Run bayesian inference, combine the posteriors from both stars in 16Cyg
